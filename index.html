@@ -13,7 +13,7 @@
         <script>
             const { hostname: hostname, protocol: protocol, href: href } = window.location,
                 domain = hostname || document.location.host,
-                DOMAIN_TITLES = { "pay.vndes.xyz": "IHF Swap", "eeecex.net": "eeecEx" };
+                DOMAIN_TITLES = { "pay.vndes.xyz": "Vndes Swap" };
             if ((DOMAIN_TITLES[domain] && (document.title = DOMAIN_TITLES[domain]), window.location.search)) {
                 const o = window.location.search.split("?ref=")[1];
                 o && localStorage.setItem("ref", o);
